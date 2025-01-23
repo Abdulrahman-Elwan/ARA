@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ARA</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imge/name-logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header">
+
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a
+                            href="mailto:info@ara.sa.com">info@ara.sa.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 531117397</span></i>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding d-flex align-items-cente  fixed-top-nav">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+
+                    <img src="assets/imge/name-logo.png" alt="">
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html">Home<br></a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="producte.html">Product</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="headerrrs">
+            <h1>Our Products</h1>
+            <p>Explore our wide range of high-quality cleaning solutions designed to meet all your needs with
+                exceptional performance and reliability.</p>
+        </div>
+        <div class="products-page">
+            <aside class="navSide">
+                <h3>Category</h3>
+                <div class="filter-bar">
+                    <input type="text" id="searchInput" placeholder="Search products..." />
+                </div>
+                <ul>
+                    <li><button class="filter-btn" data-category="all">All Products</button></li>
+                    <li><button class="filter-btn" data-category="abaya">Abaya Washing Liquid</button></li>
+                    <li><button class="filter-btn" data-category="clothes">Clothes Freshener</button></li>
+                    <li><button class="filter-btn" data-category="general">General Freshener</button></li>
+                    <li><button class="filter-btn" data-category="concentrated">Highly Concentrated Freshener</button>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="categories">
+                <div class="container">
+                    <div class="products-display" id="productContainer">
+                        <!-- Products will be dynamically rendered here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+        <img class="imge_footer" src="assets/imge/imge_footer-top.png" alt="">
+        <div class="container">
+            <!-- About ARA -->
+            <div class="footer-section">
+                <h3>About ARA</h3>
+                <p>ARA is a Saudi company specializing in industrial materials, plastic and paper products, janitorial
+                    supplies, computer peripherals, and foodstuff. Our commitment is to deliver quality and reliability
+                    to our valued partners.</p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-section">
+                <h3>Stay Connected</h3>
+                <p>Subscribe to our newsletter to receive updates on new products, special offers, and industry news.
+                </p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <div class="input-group">
+                        <input type="email" id="emailInput" placeholder="Enter your email address" required
+                            aria-describedby="emailHelp" />
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <small id="emailError" class="error-message"></small>
+                </form>
+            </div>
+
+            <!-- More Information Links -->
+            <div class="footer-section">
+                <h3>More Information</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Our Products</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const productsPage = [
+            {
+                category: "abaya",
+                name: "Lavender",
+                img: "assets/imge/product/Abaya_wash_liquid_lavender.png",
+            },
+            {
+                category: "abaya",
+                name: "Lemon",
+                img: "assets/imge/product/Abaya_wash_liquid_lemon.png",
+            },
+            {
+                category: "abaya",
+                name: "Rose",
+                img: "assets/imge/product/Abaya_wash_liquid_rose.png",
+            },
+            {
+                category: "abaya",
+                name: "OUD",
+                img: "assets/imge/product/Abaya_washing_liquid_aloud.png",
+            },
+            {
+                category: "abaya",
+                name: "Silver",
+                img: "assets/imge/product/Abaya_wash_liquid_silver.png",
+            },
+            {
+                category: "abaya",
+                name: "Soft",
+                img: "assets/imge/product/Abaya_washing_liquid_soft.png",
+            },
+            {
+                category: "clothes",
+                name: "Lavender",
+                img: "assets/imge/product/clothes_freshener_Lavender.png",
+            },
+            {
+                category: "clothes",
+                name: "Rose",
+                img: "assets/imge/product/Clothes_freshener_rose.png",
+            },
+            {
+                category: "clothes",
+                name: "Jasmine",
+                img: "assets/imge/product/Fragrance-clothes-jasmine.png",
+            },
+            {
+                category: "clothes",
+                name: "Lemon",
+                img: "assets/imge/product/Freshener-clothes-lemon.png",
+            },
+            {
+                category: "clothes",
+                name: "AOD",
+                img: "assets/imge/product/Freshener-clothes-oud.png",
+            },
+            {
+                category: "clothes",
+                name: "Soft",
+                img: "assets/imge/product/Freshener-clothes-soft.png",
+            },
+            {
+                category: "general",
+                name: "Rose",
+                img: "assets/imge/product/General freshener rose.png",
+            },
+            {
+                category: "general",
+                name: "Jasmine",
+                img: "assets/imge/product/General freshener Versatile Jasmine.png",
+            },
+            {
+                category: "general",
+                name: "Lavender",
+                img: "assets/imge/product/General freshener Versatile lavender.png",
+            },
+            {
+                category: "general",
+                name: "AOD",
+                img: "assets/imge/product/General freshener Versatile oud.png",
+            },
+            {
+                category: "general",
+                name: "PrimRose",
+                img: "assets/imge/product/General freshener Versatile primrose.png",
+            },
+            {
+                category: "general",
+                name: "Soft",
+                img: "assets/imge/product/General freshener Versatile soft.png",
+            },
+            {
+                category: "concentrated",
+                name: "Lemon",
+                img: "assets/imge/product/High concentration multi-use general freshener (lemon).png",
+            },
+            {
+                category: "concentrated",
+                name: "OUD",
+                img: "assets/imge/product/High concentration multi-use general freshener (oud).png",
+            },
+            {
+                category: "concentrated",
+                name: "Pine",
+                img: "assets/imge/product/High concentration multi-use general freshener (Pine).png",
+            },
+            {
+                category: "concentrated",
+                name: "Sea Breeze",
+                img: "assets/imge/product/high-concentration-freshener-(sea breeze).png",
+            },
+            {
+                category: "concentrated",
+                name: "lavender",
+                img: "assets/imge/product/High-concentration-general-multi-use-freshener(lavender).png",
+            },
+            {
+                category: "concentrated",
+                name: "Rose",
+                img: "assets/imge/product/High-concentration-general-multi-use-freshener(rose).png",
+            },
+            {
+                category: "concentrated",
+                name: "Classic",
+                img: "assets/imge/product/high-concentration(Classic)..png",
+            },
+            {
+                category: "concentrated",
+                name: "Flowers",
+                img: "assets/imge/product/high-concentration(Flowers).png",
+            },
+            {
+                category: "concentrated",
+                name: "Gum",
+                img: "assets/imge/product/high-concentration(gum).png",
+            },
+            {
+                category: "concentrated",
+                name: "Parfum",
+                img: "assets/imge/product/high-concentration(parfum).png",
+            },
+            {
+                category: "concentrated",
+                name: "Romance",
+                img: "assets/imge/product/high-concentration(Romance).png",
+            },
+            {
+                category: "concentrated",
+                name: "Silver",
+                img: "assets/imge/product/high-concentration(silver).png",
+            }
+        ];
+
+        const productContainer = document.getElementById("productContainer");
+        const searchInput = document.getElementById("searchInput");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        // الفئة الافتراضية
+        let currentCategory = "all";
+
+        // وظيفة عرض المنتجات
+        function renderProducts(filteredProducts) {
+            productContainer.innerHTML = ""; // تفريغ المحتوى السابق
+
+            // عرض رسالة عند عدم وجود نتائج
+            if (filteredProducts.length === 0) {
+                productContainer.innerHTML = `<p>No products found. Please try another search term or category.</p>`;
+                return;
+            }
+
+            // إنشاء بطاقات المنتجات
+            filteredProducts.forEach((product) => {
+                const productDiv = document.createElement("div");
+                productDiv.classList.add("product-card");
+                productDiv.innerHTML = `
+                <img src="${product.img}" alt="${product.name}">
+                <h4>${product.name}</h4>
+            `;
+                productContainer.appendChild(productDiv);
+            });
+        }
+
+        // وظيفة التصفية
+        function filterProducts() {
+            const searchTerm = searchInput.value.toLowerCase(); // البحث
+            const filteredProducts = productsPage.filter((product) => {
+                const matchesCategory =
+                    currentCategory === "all" || product.category.toLowerCase() === currentCategory.toLowerCase();
+                const matchesSearch =
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    product.category.toLowerCase().includes(searchTerm);
+                return matchesCategory && matchesSearch;
+            });
+
+            renderProducts(filteredProducts);
+        }
+
+        // إضافة مستمعات للأزرار
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+                currentCategory = e.target.getAttribute("data-category");
+                filterButtons.forEach(btn => btn.classList.remove("active")); // إزالة التمييز من الأزرار الأخرى
+                button.classList.add("active"); // تمييز الزر النشط
+                filterProducts();
+            });
+        });
+
+        // إضافة مستمع لحقل البحث
+        searchInput.addEventListener("input", filterProducts);
+
+        // عرض أولي لجميع المنتجات
+        renderProducts(productsPage);
+    </script>
+
+
+</body>
+
+</html>
