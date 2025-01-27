@@ -1471,7 +1471,8 @@ section,
 
 .product .product_all .product-show-text{
   position: absolute;
-  bottom: 15px;
+  top: 280px;
+  width: 267px;
 }
 
 
