@@ -3341,6 +3341,12 @@ section,
     font-size: 12px;
     font-weight: 600;
   }
+  .product .product_all .product-show-text p {
+    font-size: 13px;
+  }
+  .product .product_all .product-show-text h3 {
+    font-size: 27px;
+  }
 }
 @media (max-width: 300px){
   .product .product_all .product-show {
