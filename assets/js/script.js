@@ -111,7 +111,7 @@ const products = [
     {
         imgSrc: "assets/imge/pro2_Highly_concentrated_freshener.png",
         imgAlt: "Highly concentrated freshener",
-        title: "Highly concentrated freshener",
+        title: "Concentrated freshener",
         discription : "Long-lasting freshness for your spaces.",
         link: "producte.html"
     },
