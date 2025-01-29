@@ -85,6 +85,32 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
+body {
+    scroll-behavior: smooth;
+    scrollbar-color: #94d4dc rgba(137, 137, 137, 0.081);
+    scrollbar-width: thin;
+}
+
+/* تحسين شكل التمرير في Chrome و Edge و Safari */
+body::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #94d4dc;
+    border-radius: 50% !important;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(137, 137, 137);
+    border-radius: 50% !important;
+}
+
+
+
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
