@@ -426,7 +426,7 @@ form label {
 }
 
 .navSide::-webkit-scrollbar-track {
-    background: rgb(137, 137, 137);
+    background: rgba(137, 137, 137, 0.281);
     border-radius: 20px !important;
 }
 
