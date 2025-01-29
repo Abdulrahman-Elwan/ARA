@@ -3378,7 +3378,7 @@ section,
     font-size: 27px;
   }
   .about-text a {
-    width: 70% !important;
+    width: 90% !important;
   }
 }
 @media (max-width: 300px){
