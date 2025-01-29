@@ -411,8 +411,8 @@ form label {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow-y: scroll;
-    height: 70vh;
+    overflow-y: scroll !important;
+    height: 70vh !important;
 }
 
 .navSide::-webkit-scrollbar {
