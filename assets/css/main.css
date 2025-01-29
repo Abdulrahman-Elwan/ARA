@@ -3377,6 +3377,9 @@ section,
   .product .product_all .product-show-text h3 {
     font-size: 27px;
   }
+  .about-text a {
+    width: 70% !important;
+  }
 }
 @media (max-width: 300px){
   .product .product_all .product-show {
