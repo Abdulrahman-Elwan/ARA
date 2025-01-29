@@ -411,7 +411,8 @@ form label {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
     height: 70vh !important;
 }
 
