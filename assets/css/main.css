@@ -86,31 +86,31 @@ h6 {
 }
 
 
-body {
+/* تغيير سلوك التمرير ليكون سلسًا */
+html {
     scroll-behavior: smooth;
-    scrollbar-color: #94d4dc rgba(137, 137, 137, 0.2); /* تحسين الشفافية */
-    scrollbar-width: thin;
 }
 
-/* تحسين شكل التمرير في Chrome و Edge و Safari */
-body::-webkit-scrollbar {
-    width: 8px;
+/* تخصيص شريط التمرير في جميع المتصفحات */
+html::-webkit-scrollbar {
+    width: 10px; /* عرض شريط التمرير */
 }
 
-body::-webkit-scrollbar-thumb {
-    background: #94d4dc;
-    border-radius: 10px; /* جعل الحواف أكثر تناسقًا */
-    transition: background 0.3s ease-in-out;
+html::-webkit-scrollbar-thumb {
+    background: #94d4dc; /* لون مقبض التمرير */
+    border-radius: 10px; /* تدوير الحواف */
+    transition: background 0.3s;
 }
 
-body::-webkit-scrollbar-thumb:hover {
-    background: #72c6d1; /* لون أفتح عند التمرير */
+html::-webkit-scrollbar-thumb:hover {
+    background: #72c6d1; /* تغيير اللون عند تمرير الماوس */
 }
 
-body::-webkit-scrollbar-track {
-    background: rgba(137, 137, 137, 0.1); /* تخفيف لون الخلفية */
+html::-webkit-scrollbar-track {
+    background: rgba(137, 137, 137, 0.1); /* لون الخلفية */
     border-radius: 10px;
 }
+
 
 
 
