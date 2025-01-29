@@ -411,6 +411,23 @@ form label {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.navSide::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+.navSide::-webkit-scrollbar-thumb {
+    background: #94d4dc;
+    border-radius: 20px !important;
+}
+
+.navSide::-webkit-scrollbar-track {
+    background: rgb(137, 137, 137);
+    border-radius: 20px !important;
 }
 
 .navSide h3 {
