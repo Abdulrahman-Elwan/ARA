@@ -88,24 +88,28 @@ h6 {
 
 body {
     scroll-behavior: smooth;
-    scrollbar-color: #94d4dc rgba(137, 137, 137, 0.081);
+    scrollbar-color: #94d4dc rgba(137, 137, 137, 0.2); /* تحسين الشفافية */
     scrollbar-width: thin;
 }
 
 /* تحسين شكل التمرير في Chrome و Edge و Safari */
 body::-webkit-scrollbar {
     width: 8px;
-    
 }
 
 body::-webkit-scrollbar-thumb {
     background: #94d4dc;
-    border-radius: 50% !important;
+    border-radius: 10px; /* جعل الحواف أكثر تناسقًا */
+    transition: background 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #72c6d1; /* لون أفتح عند التمرير */
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(137, 137, 137);
-    border-radius: 50% !important;
+    background: rgba(137, 137, 137, 0.1); /* تخفيف لون الخلفية */
+    border-radius: 10px;
 }
 
 
