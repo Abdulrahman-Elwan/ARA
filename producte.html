@@ -39,9 +39,9 @@
             display: block;
         }
 
-        .dropdown button{
+        .dropdown button {
             width: 100%;
-            background:white ;
+            background: white;
             color: #002f50;
             padding: 7px;
             border-radius: 5px;
@@ -50,7 +50,8 @@
             border: 1px;
             transition: all 0.7s ease;
         }
-        .dropdown button:hover{
+
+        .dropdown button:hover {
             background: #002f50;
             color: white;
         }
@@ -61,6 +62,7 @@
             margin: 5px;
             display: inline-block;
         }
+
         .product-card img {
             width: 100%;
             max-height: 150px;
@@ -71,15 +73,17 @@
             padding: 10px;
             border-radius: 10px;
         }
+
         .products-display {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             overflow-y: auto;
-            overflow-x: hidden; 
+            overflow-x: hidden;
             scroll-behavior: smooth;
-            max-height: 70vh; /* يجعل القسم أكثر مرونة */
+            max-height: 70vh;
+            /* يجعل القسم أكثر مرونة */
             padding: 10px;
             scrollbar-color: #94d4dc rgba(137, 137, 137, 0.081);
             scrollbar-width: thin;
@@ -88,7 +92,7 @@
         /* تحسين شكل التمرير في Chrome و Edge و Safari */
         .products-display::-webkit-scrollbar {
             width: 8px;
-            
+
         }
 
         .products-display::-webkit-scrollbar-thumb {
@@ -152,73 +156,36 @@
     <main class="main">
         <div class="headerrrs">
             <h1>Our Products</h1>
-            <p>Explore our wide range of high-quality cleaning solutions designed to meet all your needs with
-                exceptional performance and reliability.</p>
+            <p>ARA Company offers a wide range of cleaning and hygiene products, carefully designed to meet the diverse
+                needs of our customers.</p>
         </div>
         <div class="products-page">
             <aside class="navSide">
-                <h3>Category</h3>
+                <h3>Products</h3>
                 <div class="filter-bar">
                     <input type="text" id="searchInput" placeholder="Search products..." />
                 </div>
                 <ul>
                     <li><button class="filter-btn" data-category="all">All Products</button></li>
-                    <li>
-                        <button class="filter-btn" data-category="homeCare">Home Care</button>
-                        <div class="dropdown">
-                            <ul>
-                                <li><button class="filter-btn" data-category="homeCare1"> Dishwashing Liquid</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="homeCare2"> Multi-porpose
-                                        Refreshener</button></li>
-                                <li><button class="filter-btn" data-category="homeCare3"> General Disinfectant</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="homeCare4"> Floors Gel
-                                        Refreshener</button></li>
-                                <li><button class="filter-btn" data-category="homeCare5"> Multi-Use Cleaner</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="homeCare6"> Comprehensive Remover</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="homeCare7"> Air Refreshener</button></li>
-                            </ul>
-                        </div>
+                    <li><button class="filter-btn" data-category="Abaya_washing_liquid">Abaya washing liquid</button>
                     </li>
-                    <li>
-                        <button class="filter-btn" data-category="fabricCare">Fabric Care</button>
-                        <div class="dropdown">
-                            <ul>
-                                <li><button class="filter-btn" data-category="fabricCare1">Fabric Conditioner and
-                                        Refreshener </button></li>
-                                <li><button class="filter-btn" data-category="fabricCare2">Abya Shampoo </button></li>
-                                <li><button class="filter-btn" data-category="fabricCare3">Bleach </button></li>
-                                <li><button class="filter-btn" data-category="fabricCare4">Clothes Shampoo </button>
-                                </li>
-                            </ul>
-                        </div>
+                    <li><button class="filter-btn" data-category="Concentrated_Fabric_Softener">Concentrated Fabric
+                            Softener</button></li>
+                    <li><button class="filter-btn" data-category="Dishwashing_Liquid">Dishwashing Liquid</button></li>
+                    <li><button class="filter-btn" data-category="Sanitizing_Gell">Sanitizing Gell</button></li>
+                    <li><button class="filter-btn" data-category="All-Purpose_Stain_Remover">All-Purpose Stain
+                            Remover</button></li>
+                    <li><button class="filter-btn" data-category="Multi-Purpose_Disinfectant">Multi-Purpose
+                            Disinfectant</button></li>
+                    <li><button class="filter-btn" data-category="Concentrated_Air_&_Fabric_Freshener">Concentrated Air
+                            & Fabric Freshener</button></li>
+                    <li><button class="filter-btn"
+                            data-category="High-Concentration_Multi-Purpose_Freshener">High-Concentration Multi-Purpose
+                            Freshener</button></li>
+                    <li><button class="filter-btn" data-category="Multi-Purpose_Cleaner">Multi-Purpose Cleaner</button>
                     </li>
-                    <li>
-                        <button class="filter-btn" data-category="personalCare">Personal Care</button>
-                        <div class="dropdown">
-                            <ul>
-                                <li><button class="filter-btn" data-category="personalCare1"> Hand Wash liquid</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="personalCare2"> Gel Antispetic</button>
-                                </li>
-                                <li><button class="filter-btn" data-category="personalCare3"> Hand Foam</button></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="filter-btn" data-category="other">Other Products</button>
-                        <div class="dropdown">
-                            <ul>
-                                <li><button class="filter-btn" data-category="other1">Spot Remover</button> </li>
-                                <li><button class="filter-btn" data-category="other1">Oven Cleaner</button></li>
-                                <li><button class="filter-btn" data-category="other1">Glass Cleane</button>r</li>
-                                <li><button class="filter-btn" data-category="other1">Bath Cleaner</button></li>
-                            </ul>
-                        </div>
-                    </li>
+                    <li><button class="filter-btn" data-category="Glass_Cleaner_&_Polisher">Glass Cleaner &
+                            Polisher</button></li>
                 </ul>
             </aside>
 
@@ -293,137 +260,130 @@
     <script>
         const productsPage = [
 
-            // HomeCare Multi-porpose Refreshener
+            // Abaya_washing_liquid
 
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Lemon", img: "assets/imge/product/home care - home2 High concentration multi-use general freshener (lemon).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener OUD", img: "assets/imge/product/home care - home2 High concentration multi-use general freshener (oud).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Pine", img: "assets/imge/product/home care - home2 High concentration multi-use general freshener (Pine).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Sea Breeze", img: "assets/imge/product/home care - home2 high-concentration-freshener-(sea breeze).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Lavender", img: "assets/imge/product/home care - home2 High-concentration-general-multi-use-freshener(lavender).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Rose", img: "assets/imge/product/home care - home2 High-concentration-general-multi-use-freshener(rose).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Classic", img: "assets/imge/product/home care - home2 high-concentration(Classic)..png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Flowers", img: "assets/imge/product/home care - home2 high-concentration(Flowers).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Gum", img: "assets/imge/product/home care - home2 high-concentration(gum).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Parfum", img: "assets/imge/product/home care - home2 high-concentration(parfum).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Romance", img: "assets/imge/product/home care - home2 high-concentration(Romance).png"},
-            { category: "homeCare2", parentCategory: "homeCare", name: "Florans Multi-porpose Refreshener Silver", img: "assets/imge/product/home care - home2 high-concentration(silver).png"},
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Lemon 1 liter", img: "assets/imge/product/سائل غسيل العبايه 1لتر lemon.png" },
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Oud 1 liter", img: "assets/imge/product/سائل غسيل العبايه 1لتر oud.png" },
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Rose 1 liter", img: "assets/imge/product/سائل غسيل العبايه 1لتر rose.png" },
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Silver 1 liter", img: "assets/imge/product/سائل غسيل العبايه 1لتر silver.png" },
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Soft 1 liter", img: "assets/imge/product/سائل غسيل العبايه 1لتر soft.png" },
+            { category: "Abaya_washing_liquid", name: "Abaya washing liquid Lavender 1 liter", img: "assets/imge/product/سائل غسيل العبايه lavender 1لتر.png" },
 
-            // HomeCare General Disinfectant
+            // All-Purpose_Stain_Remover
 
-            { category: "homeCare3", parentCategory: "homeCare", name: "General Disinfectant", img: "assets/imge/product/General Disinfectant.png"},
+            { category: "All-Purpose_Stain_Remover", name: "All Purpose Stain Remover", img: "assets/imge/product/المزيل الشامل.png" },
 
-            // HomeCare Florans Multi-Use Cleaner
+            // Concentrated_Fabric_Softener
 
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Jasmine", img: "assets/imge/product/Florans Multi-Use Cleaner jasmine.png"},
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Lavender", img: "assets/imge/product/Florans Multi-Use Cleaner Lavender.png"},
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Lemon", img: "assets/imge/product/Florans Multi-Use Cleaner lemon.png"},
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Oud", img: "assets/imge/product/Florans Multi-Use Cleaner oud.png"},
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Rose", img: "assets/imge/product/Florans Multi-Use Cleaner rose.png"},
-            { category: "homeCare5", parentCategory: "homeCare", name: "General Disinfectant Soft", img: "assets/imge/product/Florans Multi-Use Cleaner soft.png"},
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Jasmine 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر jasmine.png" },
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Lavender 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر Lavender.png" },
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Lemon 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر lemon.png" },
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Oud 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر oud.png" },
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Rose 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر rose.png" },
+            { category: "Concentrated_Fabric_Softener", name: "Concentrated Fabric Softener Soft 1 liter", img: "assets/imge/product/معطر الملابس المركز 1لتر soft.png" },
 
-            // HomeCare Comprehensive Remover
+            // Dishwashing_Liquid
 
-            { category: "homeCare6", parentCategory: "homeCare", name: "Comprehensive Remover", img: "assets/imge/product/Comprehensive Remover.png"},
+            { category: "Dishwashing_Liquid", name: "Dishwashing Liquid Apple 1 liter", img: "assets/imge/product/سائل جلي  1 لتر Apple.png" },
+            { category: "Dishwashing_Liquid", name: "Dishwashing Liquid Lemon 1 liter", img: "assets/imge/product/سائل جلي  1 لتر Lemon.png" },
 
-            // HomeCare Florans Air Refreshener
+            // Sanitizing_Gell
 
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener Jasmine", img: "assets/imge/product/Florans Air Refreshener Jasmine.png"},
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener lavender", img: "assets/imge/product/Florans Air Refreshener lavender.png"},
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener Oud", img: "assets/imge/product/Florans Air Refreshener oud.png"},
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener Primrose", img: "assets/imge/product/Florans Air Refreshener primrose.png"},
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener Rose", img: "assets/imge/product/Florans Air Refreshener rose.png"},
-            { category: "homeCare7", parentCategory: "homeCare", name: "Florans Air Refreshener Soft", img: "assets/imge/product/Florans Air Refreshener soft.png"},
+            { category: "Sanitizing_Gell", name: "Sanitizing Gell Lavender 1.8 kg", img: "assets/imge/product/جل معقم 1.8 كجم Lavender.webp" },
+            { category: "Sanitizing_Gell", name: "Sanitizing Gell Lemon 1.8 kg", img: "assets/imge/product/جل معقم 1.8 كجم Lemon.png" },
+            { category: "Sanitizing_Gell", name: "Sanitizing Gell Oud 1.8 kg", img: "assets/imge/product/جل معقم 1.8 كجم Oud.png" },
+            { category: "Sanitizing_Gell", name: "Sanitizing Gell Pine 1.8 kg", img: "assets/imge/product/جل معقم 1.8 كجم Pine.png" },
+            { category: "Sanitizing_Gell", name: "Sanitizing Gell Sea Breeze 1.8 kg", img: "assets/imge/product/جل معقم 1.8 كجم Sea Breeze.png" },
 
-            // FabricCare Florans Fabric Conditioner and Refreshener
+            // Multi-Purpose_Disinfectant
 
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Jasmine", img: "assets/imge/product/Florans Multi-Use Cleaner jasmine.png"},
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Lavender", img: "assets/imge/product/Florans Multi-Use Cleaner Lavender.png"},
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Lemon", img: "assets/imge/product/Florans Multi-Use Cleaner lemon.png"},
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Oud", img: "assets/imge/product/Florans Multi-Use Cleaner oud.png"},
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Rose", img: "assets/imge/product/Florans Multi-Use Cleaner rose.png"},
-            { category: "fabricCare1", parentCategory: "fabricCare", name: "Florans Fabric Conditioner and Refreshener Soft", img: "assets/imge/product/Florans Multi-Use Cleaner soft.png"},
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant 2.25 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال (حجم التوفير 2.25 لتر).png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant 4 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال (حجم التوفير 4 لتر).png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant lavender 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر  lavender.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant Jasmine 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر Jasmine.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant Oud 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر oud.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant Primrose 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر primrose.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant Rose 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر rose.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant Soft 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر soft.png" },
+            { category: "Multi-Purpose_Disinfectant", name: "Multi-Purpose Disinfectant 2 liter", img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر.png" },
 
-            // FabricCare Abaya_wash_liquid
+            // Concentrated_Air_&_Fabric_Freshener
 
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Lavender", img: "assets/imge/product/Abaya_wash_liquid_lavender.png"},
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Lemon", img: "assets/imge/product/Abaya_wash_liquid_lemon.png"},
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Rose", img: "assets/imge/product/Abaya_wash_liquid_rose.png"},
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Silver", img: "assets/imge/product/Abaya_wash_liquid_silver.png"},
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Oud", img: "assets/imge/product/Abaya_washing_liquid_aloud.png"},
-            { category: "fabricCare2", parentCategory: "fabricCare", name: "Abaya wash liquid Soft", img: "assets/imge/product/Abaya_washing_liquid_soft.png"},
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Lavender 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Lavender).png" },
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Oud 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Oud).png" },
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Parfum 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Parfum).png" },
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Rose 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Rose).png" },
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Sea Breeze 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Sea Breeze).png" },
+            { category: "Concentrated_Air_&_Fabric_Freshener", name: "Concentrated Air & Fabric Freshener Spring flowers 400 ml", img: "assets/imge/product/معطر الجو والمفارش المركز (Spring flowers).png" },
 
+            // High-Concentration_Multi-Purpose_Freshener
 
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Lemon 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي  (lemon).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Flowers 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Flowers).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Gum 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (gum).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Lavender 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (lavender).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Oud Breeze 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (oud).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Parfum flowers 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (parfum).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Pine 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Pine).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Romance 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Romance).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Rose 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (rose).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Sea breeze 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (sea breeze).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Silver Breeze 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (silver).png" },
+            { category: "High-Concentration_Multi-Purpose_Freshener", name: "High Concentration Multi Purpose Freshener Classic flowers 150 ml", img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي(Classic)..png" },
 
+            // Multi-Purpose_Cleaner
 
-            
+            { category: "Multi-Purpose_Cleaner", name: "Multi-Purpose Cleaner 4 liter", img: "assets/imge/product/منظف عام 4 لتر.png" },
+            { category: "Multi-Purpose_Cleaner", name: "Multi-Purpose Cleaner Lavender 2.25 liter", img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Lavender.png" },
+            { category: "Multi-Purpose_Cleaner", name: "Multi-Purpose Cleaner Lemon 2.25 liter", img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Lemon.png" },
+            { category: "Multi-Purpose_Cleaner", name: "Multi-Purpose Cleaner Pine 2.25 liter", img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Pine.png" },
+            { category: "Multi-Purpose_Cleaner", name: "Multi-Purpose Cleaner Pink Rose 2.25 liter", img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Pink Rose.png" },
+
+            // Glass_Cleaner_&_Polisher
+
+            { category: "Glass_Cleaner_&_Polisher", name: "Glass Cleaner & Polisher 4 liter", img: "assets/imge/product/منظف وملمع الزجاج 4 لتر.png" },
+            { category: "Glass_Cleaner_&_Polisher", name: "Glass Cleaner & Polisher 1 liter", img: "assets/imge/product/منظف وملمع زجاج 1 لتر.png" },
+
         ];
 
         const productContainer = document.getElementById("productContainer");
         const searchInput = document.getElementById("searchInput");
         const filterButtons = document.querySelectorAll(".filter-btn");
 
-        // الفئة المحددة حاليًا
         let currentCategory = "all";
 
-        // عرض المنتجات بناءً على الفئة والبحث
         function renderProducts() {
             const searchTerm = searchInput.value.toLowerCase();
+
             const filteredProducts = productsPage.filter(product => {
-                const matchesCategory = currentCategory === "all" ||
-                    product.category === currentCategory || product.parentCategory === currentCategory;
+                const matchesCategory = currentCategory === "all" || product.category === currentCategory;
                 const matchesSearch = product.name.toLowerCase().includes(searchTerm);
                 return matchesCategory && matchesSearch;
             });
 
             productContainer.innerHTML = filteredProducts.length
                 ? filteredProducts.map(product => `
-            <div class="product-card">
-                <img src="${product.img}" alt="${product.name}">
-                <h4>${product.name}</h4>
-            </div>
-        `).join('')
+                    <div class="product-card">
+                        <img src="${product.img}" alt="${product.name}">
+                        <h4>${product.name}</h4>
+                    </div>
+                `).join('')
                 : `<p>No products found.</p>`;
         }
 
-        // عند النقر على زر فئة، يتم تحديث الفئة وعرض المنتجات
         filterButtons.forEach(button => {
             button.addEventListener("click", (e) => {
-                e.stopPropagation(); // منع انتشار الحدث
-
-                // تحديث الفئة الحالية
-                currentCategory = e.target.getAttribute("data-category");
+                e.preventDefault();
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                e.currentTarget.classList.add("active");
+                currentCategory = e.currentTarget.getAttribute("data-category");
                 renderProducts();
-
-                // العثور على القائمة المنسدلة الخاصة بهذا الزر
-                const dropdown = e.target.nextElementSibling;
-                if (dropdown && dropdown.classList.contains("dropdown")) {
-                    dropdown.classList.toggle("show");
-                }
             });
         });
 
-        // عند النقر داخل القائمة المنسدلة، منع إغلاقها
-        document.querySelectorAll(".dropdown").forEach(dropdown => {
-            dropdown.addEventListener("click", (e) => {
-                e.stopPropagation();
-            });
-        });
-
-        // عند البحث، يتم تحديث عرض المنتجات
         searchInput.addEventListener("input", renderProducts);
 
-        // عند النقر خارج القوائم، يتم إغلاق جميع القوائم المفتوحة
-        document.addEventListener("click", (e) => {
-            if (!e.target.closest(".dropdown") && !e.target.classList.contains("filter-btn")) {
-                document.querySelectorAll(".dropdown").forEach(dropdown => {
-                    dropdown.classList.remove("show");
-                });
-            }
-        });
-
-        // عرض جميع المنتجات عند بدء الصفحة
         renderProducts();
-
     </script>
 
 
