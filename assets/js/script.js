@@ -81,8 +81,8 @@ const processItems = [
     },
     {
         imgSrc: "assets/imge/clean.png",
-        imgAlt: "Clean Ingredients",
-        title: "Clean Ingredients",
+        imgAlt: "Fresh Ingredients",
+        title: "Fresh Ingredients",
         description: "Eco-friendly solutions that care for you and the planet"
     },
     {
