@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ARA</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imge/name-logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .dropdown {
+            display: none;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .dropdown.show {
+            display: block;
+        }
+
+        .dropdown button {
+            width: 100%;
+            background: white;
+            color: #002f50;
+            padding: 7px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px;
+            transition: all 0.7s ease;
+        }
+
+        .dropdown button:hover {
+            background: #002f50;
+            color: white;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            background-color: #94d4dc7c;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .products-display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            max-height: 70vh;
+            /* يجعل القسم أكثر مرونة */
+            padding: 10px;
+            scrollbar-color: #94d4dc rgba(137, 137, 137, 0.081);
+            scrollbar-width: thin;
+        }
+
+        /* تحسين شكل التمرير في Chrome و Edge و Safari */
+        .products-display::-webkit-scrollbar {
+            width: 8px;
+
+        }
+
+        .products-display::-webkit-scrollbar-thumb {
+            background: #94d4dc;
+            border-radius: 20px !important;
+        }
+
+        .products-display::-webkit-scrollbar-track {
+            background: rgb(137, 137, 137);
+            border-radius: 20px !important;
+        }
+    </style>
+
+
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header">
+
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@ara.sa">info@ara.sa</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 531117397</span></i>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding d-flex align-items-cente  fixed-top-nav">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between rotat">
+                <a href="index.html" class="logo d-flex align-items-center">
+
+                    <img src="assets/imge/name-logo.png" alt="">
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul class="rotat">
+                        <li><a href="index.html" data-key="home"><br></a></li>
+                        <li><a href="about.html" data-key="about"></a></li>
+                        <li><a href="producte.html" class="active" data-key="product"></a></li>
+                        <li><a href="contact.html" data-key="contact"></a></li>
+                        <li class="nav-item">
+                            <select id="languageSelector" class="form-control">
+                                <option value="en" data-key="en"></option>
+                                <option value="ar" data-key="ar"></option>
+                            </select>
+                        </li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="headerrrs">
+            <h1 data-key="our_Products"></h1>
+            <p data-key="our_Products_p"></p>
+        </div>
+        <div class="products-page">
+            <aside class="navSide">
+                <h3 data-key="product"></h3>
+                <div class="filter-bar">
+                    <input type="text" id="searchInput" placeholder="Search products..." />
+                </div>
+                <ul>
+                    <li><button class="filter-btn" data-key="all_Products" data-category="all"></button></li>
+                    <li><button class="filter-btn" data-key="Products1" data-category="Abaya_washing_liquid"></button>
+                    </li>
+                    <li><button class="filter-btn" data-key="Products2"
+                            data-category="Concentrated_Fabric_Softener"></button></li>
+                    <li><button class="filter-btn" data-key="Products3" data-category="Dishwashing_Liquid"></button>
+                    </li>
+                    <li><button class="filter-btn" data-key="Products4" data-category="Sanitizing_Gell"></button></li>
+                    <li><button class="filter-btn" data-key="Products5"
+                            data-category="All-Purpose_Stain_Remover"></button></li>
+                    <li><button class="filter-btn" data-key="Products6"
+                            data-category="Multi-Purpose_Disinfectant"></button></li>
+                    <li><button class="filter-btn" data-key="Products7"
+                            data-category="Concentrated_Air_&_Fabric_Freshener"></button></li>
+                    <li><button class="filter-btn" data-key="Products8"
+                            data-category="High-Concentration_Multi-Purpose_Freshener"></button></li>
+                    <li><button class="filter-btn" data-key="Products9" data-category="Multi-Purpose_Cleaner"></button>
+                    </li>
+                    <li><button class="filter-btn" data-key="Products10"
+                            data-category="Glass_Cleaner_&_Polisher"></button></li>
+                </ul>
+            </aside>
+
+            <section class="categories">
+                <div class="container">
+                    <div class="products-display" id="productContainer">
+                        <!-- Products will be dynamically rendered here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+        <img class="imge_footer" src="assets/imge/imge_footer-top.png" alt="">
+        <div class="container">
+            <!-- About ARA -->
+            <div class="footer-section">
+                <h3 data-key="about_ara_footer"></h3>
+                <p data-key="about_ara_footer_p"></p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-section">
+                <h3 data-key="Stay_Connected"></h3>
+                <p data-key="Stay_Connected_p" class="textp_pp"></p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <div class="input-group">
+                        <input type="email" id="emailInput" placeholder="Enter your email address" required
+                            aria-describedby="emailHelp" />
+                        <button type="submit" data-key="subscribe">Subscribe</button>
+                    </div>
+                    <small id="emailError" class="error-message"></small>
+                </form>
+            </div>
+
+            <!-- More Information Links -->
+            <div class="footer-section">
+                <h3 data-key="more_information"></h3>
+                <ul>
+                    <li><a href="about.html" data-key="footer_link1"></a></li>
+                    <li><a href="product.html" data-key="footer_link2"></a></li>
+                    <li><a href="#" data-key="footer_link3"></a></li>
+                    <li><a href="contact.html" data-key="footer_link4"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+
+        const productContainer = document.getElementById("productContainer");
+        const searchInput = document.getElementById("searchInput");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        let currentCategory = "all";
+
+        const productsPage = [
+
+            // Abaya_washing_liquid
+
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Lemon 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر بالليمون",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 1لتر lemon.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Oud 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر بالعود",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 1لتر oud.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Rose 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر بالورد",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 1لتر rose.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Silver 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر سلفر",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 1لتر silver.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Soft 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر سوفت",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 1لتر soft.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid Lavender 1 liter",
+                    ar: " سائل غسيل العبايه 1 لتر اللافندر",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه lavender 1لتر.png",
+            },
+            {
+                category: "Abaya_washing_liquid",
+                name: {
+                    en: "Abaya washing liquid 30 liter",
+                    ar: " سائل غسيل العبايه 30 لتر ",
+                },
+                img: "assets/imge/product/سائل غسيل العبايه 30لتر.png",
+            },
+
+            // All-Purpose_Stain_Remover
+
+            {
+                category: "All-Purpose_Stain_Remover", name: { en: "All purpose stain remover", ar: "المزيل الشامل", }, img: "assets/imge/product/المزيل الشامل.png",
+
+            },
+            {
+                category: "All-Purpose_Stain_Remover", name: { en: "Clothes bleach 30 liter", ar: "مبيض ملابس 30 لتر", }, img: "assets/imge/product/مبيض ملابس 30 لتر المزيل الشامل.png",
+
+            },
+
+            // Concentrated_Fabric_Softener
+
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Jasmine 1 liter", ar: "معطر الملابس المركز 1لتر الياسمين", }, img: "assets/imge/product/معطر الملابس المركز 1لتر jasmine.png",
+            },
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Lavender 1 liter", ar: "معطر الملابس المركز 1لتر اللافندر", }, img: "assets/imge/product/معطر الملابس المركز 1لتر Lavender.png",
+
+            },
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Lemon 1 liter", ar: "معطر الملابس المركز 1لتر الليمون" }, img: "assets/imge/product/معطر الملابس المركز 1لتر lemon.png",
+            },
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Oud 1 liter", ar: "معطر الملابس المركز 1لتر العود", }, img: "assets/imge/product/معطر الملابس المركز 1لتر oud.png",
+
+            },
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Rose 1 liter", ar: "معطر الملابس المركز 1لتر الورد", }, img: "assets/imge/product/معطر الملابس المركز 1لتر rose.png",
+
+            },
+            {
+                category: "Concentrated_Fabric_Softener", name: { en: "Concentrated fabric softener Soft 1 liter", ar: "معطر الملابس المركز 1لتر سوفت", }, img: "assets/imge/product/معطر الملابس المركز 1لتر soft.png",
+
+            },
+
+            // Dishwashing_Liquid
+
+            {
+                category: "Dishwashing_Liquid", name: { en: "Dishwashing liquid Apple 1 liter", ar: "سائل جلي  1 لتر التفاح", }, img: "assets/imge/product/سائل جلي  1 لتر Apple.png",
+
+            },
+            {
+                category: "Dishwashing_Liquid", name: { en: "Dishwashing liquid Lemon 1 liter", ar: "سائل جلي  1 لتر الليمون", }, img: "assets/imge/product/سائل جلي  1 لتر Lemon.png",
+
+            },
+
+            // Sanitizing_Gell
+
+            {
+                category: "Sanitizing_Gell", name: { en: "Sanitizing gell Lavender 1.8 kg", ar: "جل معقم 1.8 كجم اللافندر", }, img: "assets/imge/product/جل معقم 1.8 كجم Lavender.webp",
+
+            },
+            {
+                category: "Sanitizing_Gell", name: { en: "Sanitizing gell Lemon 1.8 kg", ar: "جل معقم 1.8 كجم الليمون", }, img: "assets/imge/product/جل معقم 1.8 كجم Lemon.png",
+
+            },
+            {
+                category: "Sanitizing_Gell", name: { en: "Sanitizing gell Oud 1.8 kg", ar: "جل معقم 1.8 كجم العود", }, img: "assets/imge/product/جل معقم 1.8 كجم Oud.png",
+
+            },
+            {
+                category: "Sanitizing_Gell", name: { en: "Sanitizing gell Pine 1.8 kg", ar: "جل معقم 1.8 كجم الصنوبر", }, img: "assets/imge/product/جل معقم 1.8 كجم Pine.png",
+
+            },
+            {
+                category: "Sanitizing_Gell", name: { en: "Sanitizing gell Sea Breeze 1.8 kg", ar: "جل معقم 1.8 كجم نسيم البحر", }, img: "assets/imge/product/جل معقم 1.8 كجم Sea Breeze.png",
+
+            },
+
+            // Multi-Purpose_Disinfectant
+
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 2.25 liter", ar: "مطهر عام متعدد الاستعمال (حجم التوفير 2.25 لتر)", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال (حجم التوفير 2.25 لتر).png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 4 liter", ar: "مطهر عام متعدد الاستعمال (حجم التوفير 4 لتر)", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال (حجم التوفير 4 لتر).png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant lavender 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر اللافندر", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر  lavender.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant Jasmine 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر الياسمين", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر Jasmine.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant Oud 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر العود", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر oud.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant Primrose 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر زهرة الربيع", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر primrose.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant Rose 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر الورد", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر rose.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant Soft 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر سوفت", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر soft.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 2 liter", ar: "مطهر عام متعدد الاستعمال 2 لتر", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 2 لتر.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 1 liter", ar: "مطهر عام متعدد الاستعمال 1 لتر", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 1 لتر.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 20 liter", ar: "مطهر عام متعدد الاستعمال 20 لتر", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 20 لتر.png",
+            },
+            {
+                category: "Multi-Purpose_Disinfectant", name: { en: "Multi-purpose disinfectant 30 liter", ar: "مطهر عام متعدد الاستعمال 30 لتر", }, img: "assets/imge/product/مطهر عام متعدد الاستعمال 30 لتر.png",
+            },
+
+            // Concentrated_Air_&_Fabric_Freshener
+
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Lavender 400 ml", ar: "معطر الجو والمفارش المركز اللافندر", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Lavender).png",
+            },
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Oud 400 ml", ar: "معطر الجو والمفارش المركز العود", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Oud).png",
+            },
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Parfum 400 ml", ar: "معطر الجو والمفارش المركز البرفان", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Parfum).png",
+            },
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Rose 400 ml", ar: "معطر الجو والمفارش المركز الورد", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Rose).png",
+            },
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Sea Breeze 400 ml", ar: "معطر الجو والمفارش المركز نسيم البحر", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Sea Breeze).png",
+            },
+            {
+                category: "Concentrated_Air_&_Fabric_Freshener", name: { en: "Concentrated air & fabric freshener - Spring flowers 400 ml", ar: "معطر الجو والمفارش المركز زهور الربيع", }, img: "assets/imge/product/معطر الجو والمفارش المركز (Spring flowers).png",
+            },
+
+            // High-Concentration_Multi-Purpose_Freshener
+
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Lemon 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي الليمون", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي  (lemon).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Flowers 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي الزهور", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Flowers).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Gum 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي العلكه", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (gum).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Lavender 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي اللافندر", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (lavender).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Oud Breeze 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي عود", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (oud).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-flowers Parfum 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي البارفان", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (parfum).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Pine 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي الصنوبر", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Pine).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Romance 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي رومنسي", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (Romance).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Rose 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي الورد", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (rose).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Sea breeze 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي نسيم البحر", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (sea breeze).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Silver 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي سلفر", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي (silver).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Classic flowers 150 ml", ar: "معطر عام متعدد الاستعمال عالي التركيز 150 مللي كلاسك", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 150 مللي(Classic)..png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Flowers 20 liter", ar: "معطر عام متعدد الاستعمال عالي التركيز 20 لتر الزهور", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 20 لتر(Flowers).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Lavender 20 liter", ar: "معطر عام متعدد الاستعمال عالي التركيز 20 لتر اللافندر", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 20 لتر(Lavender).png",
+            },
+            {
+                category: "High-Concentration_Multi-Purpose_Freshener", name: { en: "High concentration multi purpose freshener-Primrose 20 liter", ar: "معطر عام متعدد الاستعمال عالي التركيز 20 لتر زهرة الربيع", }, img: "assets/imge/product/معطر عام متعدد الاستعمال عالي التركيز 20 لتر(Primrose).png",
+            },
+
+            // Multi-Purpose_Cleaner
+
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner 4 liter", ar: "منظف عام 4 لتر", }, img: "assets/imge/product/منظف عام 4 لتر.png",
+
+            },
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner Lavender 2.25 liter", ar: "منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) اللافندر", }, img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Lavender.png",
+
+            },
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner Lemon 2.25 liter", ar: "منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) الليمون", }, img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Lemon.png",
+
+            },
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner Pine 2.25 liter", ar: "منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) الصنوبر", }, img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Pine.png",
+
+            },
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner Pink Rose 2.25 liter", ar: "منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) الورد", }, img: "assets/imge/product/منظف عام متعدد الاستعمال (حجم التوفير 2.25 لتر) Pink Rose.png",
+
+            },
+            {
+                category: "Multi-Purpose_Cleaner", name: { en: "Multi-purpose cleaner 30 liter", ar: "منظف عام 30 لتر", }, img: "assets/imge/product/منظف عام 30 لتر.png",
+
+            },
+
+            // Glass_Cleaner_&_Polisher
+
+            {
+                category: "Glass_Cleaner_&_Polisher", name: { en: "Glass cleaner & olisher 1 liter", ar: "منظف وملمع زجاج 1 لتر", }, img: "assets/imge/product/منظف وملمع زجاج 1 لتر.png",
+
+            },
+            {
+                category: "Glass_Cleaner_&_Polisher", name: { en: "Glass cleaner & olisher 4 liter", ar: "منظف وملمع الزجاج 4 لتر", }, img: "assets/imge/product/منظف وملمع الزجاج 4 لتر.png",
+
+            },
+            {
+                category: "Glass_Cleaner_&_Polisher", name: { en: "Glass cleaner & olisher 30 liter", ar: "منظف وملمع الزجاج 30 لتر", }, img: "assets/imge/product/منظف وملمع الزجاج 30 لتر.png",
+
+            },
+
+        ];
+
+        // وظيفة لعرض المنتجات بناءً على اللغة المختارة
+        function renderProducts() {
+            const lang = localStorage.getItem('selectedLanguage') || 'en'; // استرجاع اللغة من localStorage أو تعيين اللغة الافتراضية
+            const searchTerm = searchInput.value.toLowerCase();
+
+            const filteredProducts = productsPage.filter(product => {
+                const matchesCategory = currentCategory === "all" || product.category === currentCategory;
+                const productNameEn = product.name?.en?.toLowerCase() || "";
+                const productNameAr = product.name?.ar?.toLowerCase() || "";
+                const matchesSearch = productNameEn.includes(searchTerm) || productNameAr.includes(searchTerm);
+                return matchesCategory && matchesSearch;
+            });
+
+            productContainer.innerHTML = filteredProducts.length
+                ? filteredProducts.map(product => {
+                    const productImg = product.img || "assets/imge/default.jpg";
+                    const productName = product.name?.[lang] || product.name?.en || "No name available";
+                    return `
+                        <div class="product-card">
+                            <img src="${productImg}" alt="${productName}">
+                            <h4>${productName}</h4>
+                        </div>`;
+                }).join('')
+                : `<p>No products found.</p>`;
+        }
+
+        // وظيفة لتغيير اللغة
+        const changeLanguageButtons = document.querySelectorAll("#changeLanguage");
+        changeLanguageButtons.forEach(button => {
+            button.addEventListener("click", (e) => {
+                const lang = e.currentTarget.dataset.lang; // الحصول على اللغة المختارة
+                localStorage.setItem('selectedLanguage', lang); // تخزين اللغة في localStorage
+                renderProducts(); // تحديث المحتوى بناءً على اللغة الجديدة
+            });
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                e.currentTarget.classList.add("active");
+                currentCategory = e.currentTarget.dataset.category || "all";
+                renderProducts();
+            });
+        });
+
+        searchInput.addEventListener("input", renderProducts);
+
+        renderProducts(); // عرض المنتجات لأول مرة
+
+    </script>
+
+
+</body>
+
+</html>
