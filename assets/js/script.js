@@ -344,8 +344,13 @@ function applyTranslations(language) {
   });
 
   text_pp.forEach((element) => {
-    element.style.setProperty("font-size", rtlLanguages.includes(language) ? "18px" : "5px", "important");
-  });
+    if (rtlLanguages.includes(language)) {
+        element.style.setProperty("font-size", "18px", "important");
+    } else {
+        element.style.removeProperty("font-size"); // إزالة أي تخصيص ليعود للوضع الافتراضي في CSS
+    }
+});
+
   
 
   // 🔥 تحديث عناصر المنتجات والعمليات عند تغيير اللغة
